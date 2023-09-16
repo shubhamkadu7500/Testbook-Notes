@@ -1,0 +1,93 @@
+imp command in git - (git is version control system so it is alway track oure progress)
+
+check git is install or not - $ git
+check version of git - $ git --version
+changing path - $ cd c:
+check whats in foalder -$ ls or dir
+
+creating new foalder - $ mkdir (foalder name)
+user created foalder - $ cd path of foalder (like cd Random)
+to create file in a foalder - $ touch index.html
+how to put git in folder or initialize git - $ git init
+if we run {ls} command it only show file or foalders in it but we run {ls -a} is shows that git is initialize or not in that foalder
+(or shows hidden file or foalder)
+to check brach or status - $ git status (like master brach)
+add file to git(single file add like this) - $ git add index.html
+how to add multiple file of foalder to git - $ git add . 
+(this file we create are olny in system control by git not github so we need to push this file to github
+we are using git to push this file to github)
+how to conform which file are push to github so we need to commit - $ git commit -m"any msg regarding to commit"
+how to rename file in git - $ git mv 1.txt hello.txt (git old name of file then new name of file )
+how to delete file in git - $ git rm 2.txt
+
+
+* basic information regarding git or git bash and how to use this :-
+1) git push steps using https -
+how to config git bash to github:-
+creating repo using https 
+$ git config --global user.name "shubhamkadu7500@gmail.com"
+$ git config --global user.email "shubhamkadu7500@gmail.com"
+$ git config --list
+
+check working repositry - $ pwd
+(creating new repo in admin, so
+$ mkdir Git_Demo1
+$ cd Git_Demo1
+$ pwd)
+
+(then agian creating new repo inside Git_Demo1 repo
+$ mkdir firstrepo
+$ cd firstrepo
+$ pwd )
+
+to make this folder to git repo(folder)
+$ git init
+then creating one test file inside firstrepo folder
+$ touch alpha.txt
+then we need to open this file so
+$ notepad alpha.txt
+
+to check status of created file
+$ git status
+No commits yet - So far no file is committed in the repository.
+Untracked files names are highlighted in red color.
+
+To track untracked files, use the add command.
+We can specify the exact file name or the following command.
+$ git add .
+this command add all file to track which are not track
+then check status, red color file name change to yellow color
+$ git status
+
+commit is created to confirm and give a comment about what work has done
+$ git commit -"beta gama"
+then checking git status it showing nothing to commit mean all are commit
+$ git status
+
+to check all information regarding commit like commitId, authore name, emailid, date, time
+$ git log
+
+* gitp push :-
+now we push file we created recently alpha.txt to github. open your github account and make one repositry
+copy the $ "git remote add origin" + url
+$ git remote add origin https://github.com/shubhamkadu7500/proshivam.git
+then check $ git remote -v
+and now push content to gihub repo
+$ git push -u origin master
+and then refresh github and check alpha.txt file are push to github
+
+2) git push using ssh -
+
+
+using vs code push and pull files - 
+create folder anywere you wont (we create new1 foalder in desktop)
+open vscode - open created folder and create new files inside it and save (we created index1.js)
+then open new terminal and tell that folder(new1) that you are git folder - git init
+then check - git status
+tracking of created file we add this - git add index1.js(showing green name, so this means we track file sucssesfully)
+check status again - git status
+why we created changes so we need to commit on it - git commit -m"initial commit" (after this showing name in yollow)
+aading repo to origin to vs code  (11.37 minite)
+and the push file so-   git pish -u origin master
+
+
